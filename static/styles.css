@@ -1,0 +1,145 @@
+body {
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.logo-container {
+    position: fixed;
+    top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Abstand zwischen Eingabefeld und Button */
+}
+
+.form-control {
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 600px; /* Maximale Breite für das Eingabefeld */
+    height: 2.8em;
+    box-sizing: border-box;
+}
+
+.btn-download {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-download:hover {
+    background-color: #333;
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-top: 5px solid black;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.terms-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: #888;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.contact-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #888;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #555;
+    text-decoration: underline;
+}

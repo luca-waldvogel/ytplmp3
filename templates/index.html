@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist to MP3 Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/jiffymp3-high-resolution-logo-transparent.png') }}" alt="JiffyMP3 Logo" class="logo">
+    </div>
+    <!-- Form Section -->
+    <div class="container text-center">
+        <h1 class="mb-4">Convert YouTube Playlist or Video to MP3</h1>
+        <form id="downloadForm" class="input-wrapper">
+            <input type="text" id="playlist_url" name="playlist_url" class="form-control" placeholder="Enter YouTube Video or Playlist URL" required>
+            <button type="submit" class="btn btn-download">Download</button>
+        </form>
+    </div>
+
+    <!-- Loading spinner (hidden by default) -->
+        <div id="loading-spinner" class="spinner-container" style="display: none;">
+            <div class="custom-spinner"></div>
+            <p>creating mp3 ...</p>
+        </div>
+    </div>
+
+    <!-- Terms text-->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>These Terms govern your use of the JiffyMP3 website. By using our site, you agree to these terms. If you disagree with any part, please refrain from using our services.</p>
+                    
+                    <h6>1. Acceptance of Terms</h6>
+                    <p>By accessing JiffyMP3, you agree to these Terms of Use and any applicable terms for specific features.</p>
+
+                    <h6>2. User Responsibilities</h6>
+                    <ul>
+                        <li>You must have permission to upload, convert, and download any content on JiffyMP3.</li>
+                        <li>Do not use JiffyMP3 for illegal activities. Follow all laws and regulations.</li>
+                        <li>You are responsible for any content you upload or convert. JiffyMP3 does not endorse or verify user content.</li>
+                    </ul>
+
+                    <h6>3. Prohibited Activities</h6>
+                    <ul>
+                        <li>Do not use JiffyMP3 to violate others' intellectual property rights.</li>
+                        <li>Do not upload or share harmful or illegal content.</li>
+                        <li>Do not attempt to access unauthorized parts of JiffyMP3.</li>
+                    </ul>
+
+                    <h6>4. Intellectual Property</h6>
+                    <ul>
+                        <li>JiffyMP3 and its content (text, graphics, software) are protected by copyright. You may not use them without permission.</li>
+                        <li>Uploaded content remains the property of its owners. By using JiffyMP3, you grant us a license to use the content as needed for our services.</li>
+                    </ul>
+
+                    <h6>5. Limitation of Liability</h6>
+                    <ul>
+                        <li>JiffyMP3 is provided "as is." We do not guarantee uninterrupted or error-free service.</li>
+                        <li>We are not liable for any damages arising from your use of JiffyMP3.</li>
+                    </ul>
+
+                    <h6>6. Copyright</h6>
+                    <p>JiffyMP3 respects copyright. If you believe your rights are being infringed, please contact us with details and URLs of the content to be blocked.</p>
+
+                    <h6>7. Changes to Terms</h6>
+                    <p>We may update these Terms at any time. Changes take effect when posted. Continued use of JiffyMP3 means acceptance of the updated Terms.</p>
+
+                    <h6>8. Governing Law</h6>
+                    <p>These Terms are governed by the laws of Switzerland, and any disputes shall be subject to the exclusive jurisdiction of the courts of Switzerland.</p>
+
+                    <h6>9. Data Privacy</h6>
+                    <ul>
+                        <li>No Data Storage: JiffyMP3 does not store any user data or content. All data processed through our services is used solely for the purpose of providing the requested conversion and is not saved on our servers.</li>
+                        <li>No Data Analysis: JiffyMP3 does not analyze, track, or profile any data or content uploaded by users. Once the conversion process is completed, all data is immediately deleted from our system.</li>
+                        <li>User Anonymity: We respect user privacy and ensure that all actions on our platform remain anonymous. No personal information is required or retained for using the conversion services.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms link -->
+    <a href="#" class="terms-link" data-toggle="modal" data-target="#termsModal">Terms</a>
+
+    <!-- Contact Link -->
+    <a href="mailto:waldvogel.luca@hotmail.com" class="contact-link";">Contact</a>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

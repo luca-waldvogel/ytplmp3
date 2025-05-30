@@ -6,7 +6,6 @@ import logging
 import webbrowser
 import threading
 
-# Logging konfigurieren
 logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)

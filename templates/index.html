@@ -11,6 +11,7 @@
     <div class="logo-container">
         <img src="{{ url_for('static', filename='images/jiffymp3-high-resolution-logo-transparent.png') }}" alt="JiffyMP3 Logo" class="logo">
     </div>
+    
     <!-- Form Section -->
     <div class="container text-center">
         <h1 class="mb-4">Convert YouTube Playlist or Video to MP3</h1>
@@ -21,10 +22,8 @@
     </div>
 
     <!-- Loading spinner (hidden by default) -->
-        <div id="loading-spinner" class="spinner-container" style="display: none;">
-            <div class="custom-spinner"></div>
-            <p>creating mp3 ...</p>
-        </div>
+    <div class="spinner-overlay" id="loading-spinner" style="display: none;">
+        <div class="custom-spinner"></div>
     </div>
 
     <!-- Terms text-->

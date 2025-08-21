@@ -35,6 +35,26 @@ I built this tool so I can easily download tracks and **burn them onto CDs for m
 
 ---
 
+## ⚙️ Installation & Setup
+
+### 1) Clone the repository
+```bash
+git clone https://github.com/USERNAME/ytplmp3.git
+cd ytplmp3
+```
+
+### 2) Install dependencies
+```bash
+pip install Flask yt-dlp
+```
+
+### 3) Run the app
+```bash
+python app.py
+```
+The app will open (or is available) at: http://127.0.0.1:5000
+---
+
 ## ⚖️ Legal & Disclaimer
 This tool is provided for personal use only.
 Ensure that you only download content you have the rights to. Respect YouTube’s Terms of Service and local copyright laws.

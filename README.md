@@ -1,4 +1,4 @@
-# 🎵 ytplmp3 – YouTube Playlist & Video to MP3 Converter
+# 🎵 JiffyMP3 – YouTube Playlist & Video to MP3 Converter
 
 A simple **Flask-based web application** that converts entire **YouTube playlists or single videos** into MP3 files.
 I built this tool so I can easily download tracks and **burn them onto CDs for my car** 🚗💿.

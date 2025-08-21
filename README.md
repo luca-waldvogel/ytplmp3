@@ -47,6 +47,7 @@ cd ytplmp3
 ```bash
 pip install Flask yt-dlp
 ```
+Make sure **FFmpeg** is installed (see prerequisites).
 
 ### 3) Run the app
 ```bash

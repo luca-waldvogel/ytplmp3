@@ -54,6 +54,7 @@ Make sure **FFmpeg** is installed (see prerequisites).
 python app.py
 ```
 The app will open (or is available) at: http://127.0.0.1:5000
+
 ---
 
 ## ⚖️ Legal & Disclaimer

@@ -39,7 +39,7 @@ I built this tool so I can easily download tracks and **burn them onto CDs for m
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/USERNAME/ytplmp3.git
+git clone https://github.com/luca-waldvogel/ytplmp3.git
 cd ytplmp3
 ```
 
